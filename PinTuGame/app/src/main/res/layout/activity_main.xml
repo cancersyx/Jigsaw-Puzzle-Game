@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#20c7e4">
+
+   <LinearLayout
+       android:id="@+id/ll_puzzle_main_spinner"
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+       android:layout_centerHorizontal="true"
+       android:orientation="horizontal"
+       android:layout_margin="10dip">
+       <TextView
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:layout_gravity="center"
+           android:text="选择难度"
+           android:textColor="#ffffff"
+           android:textSize="20sp"/>
+       <TextView
+           android:id="@+id/enter_game_button"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:layout_gravity="center"
+           android:background="@drawable/button1"
+           android:text="2X2"
+           android:textColor="#ffffff"
+           android:textSize="22sp"/>
+   </LinearLayout>
+
+    <GridView
+        android:id="@+id/gv_xpuzzle_main_pic_list"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/ll_puzzle_main_spinner"
+        android:layout_centerHorizontal="true"
+        android:layout_margin="10dp"
+        android:gravity="center_horizontal"
+        android:horizontalSpacing="5dp"
+        android:numColumns="4"
+        android:padding="3dip"
+        android:verticalSpacing="5dp"/>
+
+
+
+</RelativeLayout>
